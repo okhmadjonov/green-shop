@@ -1,0 +1,75 @@
+
+.plants {
+    display: inline-block;
+  
+    &__list {
+      margin: 0;
+      padding-left: 0;
+      list-style-type: none;
+    }
+  
+    &__list:hover .hover-svg{
+      opacity: 1;
+      color: #46A358;
+      
+    }
+    &__item {
+      margin-right: 40px;
+     
+    }
+   
+  
+    &__item:last-child {
+      margin-right: 0;
+    }
+  
+    &__image {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+      background-color: #fbfbfb;
+      padding: 25px 5px;
+    }
+    &__icons{
+      width: 70%;
+      height: 40px;
+      margin: 0 auto;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+     
+   
+
+       .hover-svg{
+        width: 50px;
+        height: 100%;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+      
+       }
+       .hover-svg:hover{
+        color: var(--accent-color);
+       }
+      
+    }
+    &__description {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--main-text-color);
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+  
+    &__price {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 16px;
+      color: var(--accent-color);
+    }
+  }

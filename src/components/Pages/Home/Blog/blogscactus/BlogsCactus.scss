@@ -1,0 +1,73 @@
+
+.blogsCactus {
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 268px;
+    margin-right: 43px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    background-color: #fbfbfb;
+    padding: 9px 11px 12px 15px;
+  }
+
+  &__span {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--accent-color);
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--main-text-color);
+    transition: 0.3s ease;
+  }
+
+  &__link:hover {
+    color: var(--accent-color);
+  }
+}
